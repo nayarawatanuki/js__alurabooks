@@ -1,0 +1,77 @@
+.books {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 644px;
+    margin-bottom: 1rem;
+}
+
+.unavailable {
+    opacity: 0.3;
+}
+
+.book__title {
+    color: var(--text-title-color);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.book__author {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-author-color);
+    margin: 1rem 0;
+}
+
+.book__price {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-price-color);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.tag {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-tag-color);
+    padding: 5px 4px;
+    background: rgba(197, 197, 197, 0.25);
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.books__available {
+    height: 80px;
+    background-color: var(--text-description-color);
+    margin-top: 1rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books__available p {
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 2.5em;
+} 

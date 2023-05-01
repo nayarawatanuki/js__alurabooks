@@ -1,0 +1,23 @@
+@import url(../toolkits/fonts/Poppins.css);
+@import url(../toolkits/fonts/JosefinSans.css);
+
+:root {
+    --links-footer: #EBECEE;
+    --background: #FFFFFF;
+    --button-color: #326589;
+    --text-color: #FFFFFF;
+    --text-author-color: #858585;
+    --text-button-color-hover: #CECDCD;
+    --text-description-color: #FC6621;
+    --text-price-color: #002F52;
+    --text-tag-color: #9C9C9C;
+    --text-title-color: #FC6621;
+    
+    --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --gray: #474646;
+    --orange:#EB9B00;
+    --red: #D94937;
+    
+    --font: "Poppins";
+    --second-font: "Josefin Sans";
+}

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/styles/style.css">
+        
+        <title>Alurabooks</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="menu">
+
+                <input type="checkbox" name="" id="menu" class="menu__button">
+                <label for="menu" class="menu__label">
+                    <span class="menu-hamburguer menu-link__img"></span>
+                </label>
+
+                <ul class="menu-list">
+                    <li class="menu-list__title">Categorias</li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Programação</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Front-end</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Infraestrutura</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Business</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Design & UX</a>
+                    </li>
+                </ul>
+
+                <figure class="menu-logo">
+
+                    <img class="menu-link__img" src="assets/imgs/logo/Logo.svg" alt="Logo da Alurabooks">
+
+                    <figcaption class="menu-logo__title">
+
+                        <h1 class="menu__title"><b class="menu__title--bold">Alura</b>Books</h1>
+                    </figcaption>
+                </figure>
+                
+            </nav>
+
+            <ul class="line-menu">
+                <input type="checkbox" id="line-menu" class="line-menu__button">
+
+                <label for="line-menu" class="line-menu__label">
+                    <li class="line-menu__item">Categorias</li>
+                </label>
+
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Programação</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Front-end</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Infraestrutura</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Business</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Design & UX</a>
+                    </li>
+                </ul>
+
+                <li class="line-menu__item">
+                    <a href="#" class="line-menu__link">Favoritos</a>
+                </li>
+                <li class="line-menu__item">
+                    <a href="#" class="line-menu__link">Minha estante</a>
+                </li>
+            </ul>
+
+            <nav class="menu">
+                <a href="#" class="menu__link">
+                    <img src="assets/imgs/menu/Favorites.svg" alt="Meus favoritos" class="menu-link__img menu-link__img--transparent">
+                </a>
+                <a href="#" class="menu__link">
+                    <img src="assets/imgs/menu/Purchases.svg" alt="Carrinhos de compras" class="menu-link__img">
+                    <p class="menu-link__label">Minha sacola</p>
+                </a>
+                <a href="#" class="menu__link">
+                    <img src="assets/imgs/menu/User.svg" alt="Meu perfil" class="menu-link__img">
+                    <p class="menu-link__label">Meu perfil</p>
+                </a>
+            </nav>
+            
+        </header>
+
+        <section class="banner"></section>
+
+        <main>
+
+            <nav class="container">
+                <ul class="menu">
+                    <li><button class="button" id="btnBooksFront">Livros de Front-end</button></li>
+                    <li><button class="button" id="btnBooksBack">Livros de Back-end</button></li>
+                    <li><button class="button" id="btnBooksData">Livros de dados</button></li>
+                    <li><button class="button" id="btnBooksAvailable">Livros disponíveis</button></li>
+                    <li><button class="button" id="btnSortPrice">Ordenar por preço</button></li>
+                </ul>
+            </nav>
+
+            <section class="books container" id="books">
+                <figure class="book">
+                    <img src="assets/imgs/books/Cangaceiro-Javascript.png" alt="Capa do livro: Cangaceiro JavaScript" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">Cangaceiro JavaScript: Uma aventura no sertão da programação</h2>
+                        <p class="book__author">Flávio Almeida</p>
+                        <p class="book__price" id="price"> R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/O-Retorno-do-cangaceiro-JavaScript.png" alt="Capa do livro: O Retorno do Cangaceiro JavaScript+" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Cangaceiro JavaScript +: 
+                            O Retorno do cangaceiro Javascript</h2>
+                        <p class="book__author">Flávio Almeida</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/O-Retorno-do-cangaceiro-JavaScript2.png" alt="Capa do livro: O Retorno do Cangaceiro JavaScript: De padrões a uma abordagem funcional" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            O Retorno do cangaceiro JavaScript: 
+                            De padrões a uma abordagem funcional</h2>
+                        <p class="book__author">Flávio Almeida</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+                    
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Acessibilidade-na-Web.png" alt="Capa do livro: Acessibilidade na Web" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Acessibilidade na Web:
+                            Boas práticas para construir sites e aplicações acessíveis
+                        </h2>
+                        <p class="book__author">Renaldo Ferraz</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/A-Web-Mobile.png" alt="Capa do livro: A Web Mobile: Design Responsivo e além para Web adaptada ao mundo mobile" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">A Web Mobile: Design Responsivo e além para Web adaptada ao mundo mobile</h2>
+                        <p class="book__author">Sérgio Lopes</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Coletânea-Front-end.png" alt="Capa do livro: Coletânea Front-end: Uma antologia da comunidade front-end brasileira" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Coletânea Front-end:
+                            Uma antologia da comunidade front-end brasileira
+                        </h2>
+                        <p class="book__author">Múltiplos autores</p>
+                        <p class="book__price" id="price">R$ 29.9</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Guia-front-end.png" alt="Capa do livro: Guia Front-End: O caminho das pedras para ser um dev Front-End" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Guia Front-End:
+                            O caminho das pedras para ser um Dev. Front-End 
+                        </h2>
+                        <p class="book__author">Diego Eis</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/HTML-e-CSS3.png" alt="Capa do livro: HTML5 e CSS3: Domine a web do futuro" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">HTML5 e CSS3: Domine a web do futuro</h2>
+                        <p class="book__author">Lucas Mazza</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Bootstrap4.png" alt="Capa do livro: Bootstrap 4: Conheça a biblioteca front-end mais utilizada no mundo" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Bootstrap 4: 
+                            Conheça a biblioteca Front-end mais utilizada no mundo
+                        </h2>
+                        <p class="book__author">Natan Souza</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Sass.png" alt="Capa do livro: Sass: Aprendendo pré-processadores CSS" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Sass:
+                            Aprendendo pré-processadores CSS
+                        </h2>
+                        <p class="book__author">Natan Souza</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>`
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Turbine-seu-CSS.png" alt="" class="book__img">
+                    <figcaption>
+                        
+                        <h2 class="book__title">
+                            Turbine seu CSS:
+                            Folhas de estilo inteligentes com Sass
+                        </h2>
+                        <p class="book__author">Rosicléia Frasson</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/CSS-Eficiente.png" alt="Capa do livro: CSS Eficiente: Técnicas e ferramentas que fazem a diferença nos seus estilos" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            CSS Eficiente: 
+                            Técnicas e ferramentas que fazem a diferença nos seus estilos
+                        </h2>
+                        <p class="book__author">Rosicléia Frasson</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Angular-11-e-Firebase.png" alt="Capa do livro: Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma Google" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Angular 11 e Firebase:
+                            Construindo uma aplicação integrada com a plataforma Google
+                        </h2>
+
+                        <p class="book__author">Kheronn Khennedy Machado</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Guia-prático-de-Typescript.png" alt="Capa do livro: Guia prático de TypeScript: Melhore suas aplicações JavaScript" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Guia prático de TypeScript:
+                            Melhore suas aplicações JavaScript
+                        </h2>
+                        <p class="book__author">Thiago da Silva Adriano</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Front-end-com-Vue.js.png" alt="Capa do livro: Front-end com Vue.js: Da teoria à prática sem complicações" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Front-end com Vue.js:
+                            Da teoria à prática sem complicações
+                        </h2>
+                        <p class="book__author">Leonardo Vilarinho</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+
+                <figure class="book">
+                    <img src="assets/imgs/books/Vue.js.png" alt="Capa do livro: Vue.js: Construa aplicações incríveis" class="book__img">
+                    <figcaption>
+
+                        <h2 class="book__title">
+                            Vue.js: 
+                            Construa aplicações incríveis
+                        </h2>
+                        <p class="book__author">Caio Incau</p>
+                        <p class="book__price" id="price">R$ 29.90</p>
+                    </figcaption>
+
+                    <div class="tags">
+                        <span class="tag">Front-end</span>
+                        <span class="tag">Back-end</span>
+                    </div>
+                </figure>
+            </section>
+
+            <section id="booksAvailableValueTotal">
+                <div class="books__available">
+                    <p>Todos os livros disponíveis por R$ <span id="value">299.00</span></p>
+                </div>
+            </section>
+
+        </main>
+
+        <hr>
+        <footer class="footer">
+            <h2 class="footer__title">Alura - Mergulhe em tecnologia</h2>
+
+            <ul class="footer__list">
+                <li class="footer-list__title">Educação</li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/Caelum.svg" alt="Logo Caelum" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Caelum</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/CasaDoCodigo.svg" alt="Logo Casa do Código" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Casa do Código</a>
+                </li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer-list__title">Educação Online</li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/Alura.svg" alt="Logo Alura" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Alura</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/AluraEmpresas.svg" alt="Logo Alura Para Empresas" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Alura Para Empresas</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/AluraLATAM.svg" alt="Logo Alura LATAM" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Alura LATAM</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/AluraStart.svg" alt="Logo Alura Start" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Alura Start</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/MusicDot.svg" alt="Logo MusicDot" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">MusicDot</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/AluraLingua.svg" alt="Logo Alura Língua" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Alura Língua</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/PM3.svg" alt="Logo PM3" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">PM3</a>
+                </li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer-list__title">Comunidade</li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/HipstersTech.svg" alt="Logo Hipsters ponto Tech" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Hipsters ponto Tech</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/ScubaDev.svg" alt="Logo Scuba Dev" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Scuba Dev</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/LayersTech.svg" alt="Logo Layers ponto Tech" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Layers ponto Tech</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/LikeABoss.svg" alt="Logo Like a Boss" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Like a Boss</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/CarreiraSemFronteira.svg" alt="Logo Carreira sem Fronteira" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Carreira sem Fronteira</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/HipstersJobs.svg" alt="Logo Hipsters ponto Jobs" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">Hipsters ponto Jobs</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/imgs/footer/GUJ.svg" alt="Logo GUJ" class="footer-list__icon">
+                    <a href="#" class="footer-list__link">GUJ</a>
+                </li>
+            </ul>
+        </footer>
+
+        <script type="module" src="app/app.js"></script>
+    </body>
+</html>

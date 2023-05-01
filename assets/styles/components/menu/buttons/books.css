@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin: 4rem 0;
+}
+
+.button {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    height: 44px;
+    padding: 10px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    color: var(--text-button-color-hover);
+    border-radius: 10px;
+    border-bottom: 2px solid var(--text-author-color);
+}

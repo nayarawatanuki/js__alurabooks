@@ -1,0 +1,18 @@
+.header {
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    height: 42px;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    position: relative;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1728px) {
+
+    .header {
+        padding: 0 2em;
+    }
+}
