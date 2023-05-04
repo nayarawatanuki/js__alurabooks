@@ -1,6 +1,12 @@
-import { zipCode } from "./base/variable.js";
+import { books, buttonSortPrice, buttonsFilterBooks } from "./base/variables.js";
+import { getBooksAPI, filterBooks, sortBooksByPrice } from "./components/index.js";
 
-import { fetchAddress } from "./components/fetchAddress.js";
 
+getBooksAPI();
 
-zipCode.addEventListener("focusout", () => fetchAddress(zipCode.value));
+buttonsFilterBooks.forEach(btn => btn.addEventListener("click", event => { 
+    
+    filterBooks(books, event.target.value)
+}));
+
+buttonSortPrice.addEventListener("click", sortBooksByPrice);
