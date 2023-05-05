@@ -2,14 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-}
 
-.menu:last-child {
-    margin-right: 2rem;
-}
-
-.menu-logo {
-    display: flex;
 }
 
 .menu-logo__title {
@@ -50,7 +43,8 @@
 }
 
 .menu__title,
-.menu-link__label {
+.menu-link__label,
+.menu-logo {
     display: none;
 }
 
@@ -69,6 +63,14 @@
 
     .menu__title--bold {
         font-weight: bold;
+    }
+    
+}
+
+@media screen and (min-width: 400px) {
+
+    .menu-logo {
+        display: flex;
     }
     
 }

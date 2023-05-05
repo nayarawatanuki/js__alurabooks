@@ -1,21 +1,18 @@
 .banner {
-    background-image: url(../../imgs/banner/Banner-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 278px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* .banner__title {
-    color: var(--background);
-    font-size: 18px;
-    font-weight: 700;
-    padding: 1em;
-    text-align: center;
+.banner__img {
+    width: 100vw;
+    zoom: 2;
 }
 
-@media screen and (min-width: 1024px) {
 
-    .banner__title {
-        font-size: 36px;
+@media screen and (min-width: 768px) {
+
+    .banner__img {
+        zoom: 1;
     }
-} */
+}

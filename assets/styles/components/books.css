@@ -1,20 +1,22 @@
 .books {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    column-gap: 2rem;
 }
 
 .book {
-    width: 302px;
+    width: 202px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 644px;
-    margin-bottom: 1rem;
+    margin: 0  0 2rem 0
 }
 
 .unavailable {
     opacity: 0.3;
+}
+
+.book__img {
+    margin: 0 0 2rem 0;
 }
 
 .book__title {
@@ -75,3 +77,11 @@
     line-height: 24px;
     font-size: 2.5em;
 } 
+
+@media screen and (min-width: 500px) {
+
+    .book {
+        width: 302px;
+    }
+    
+}

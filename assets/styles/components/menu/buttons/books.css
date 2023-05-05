@@ -1,9 +1,9 @@
-.menu {
+.menu-button {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    height: 30px;
-    margin: 4rem 0;
+    margin: 2rem;
 }
 
 .button {
@@ -11,12 +11,15 @@
     border: none;
     color: var(--text-color);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
     border-radius: 8px;
     font-size: 0.9rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    height: 44px;
+    margin: .5em;
     padding: 10px 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -26,4 +29,13 @@
     color: var(--text-button-color-hover);
     border-radius: 10px;
     border-bottom: 2px solid var(--text-author-color);
+}
+
+@media screen and (max-width: 810px) {
+    .button {
+        
+        font-size: 12px;
+        width: 100px;
+
+    }
 }

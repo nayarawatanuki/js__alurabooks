@@ -3,6 +3,11 @@
    License: none (public domain)
 */
 
+html, 
+body {
+    width: 100vw;
+}
+
 html,
 body,
 div,
